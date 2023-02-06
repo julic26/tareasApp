@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>App tareas</title>
+</head>
+<body>
+
+    <button id="create-modal" >Create</button>
+
+    <div class="contain-modal">
+
+        
+
+        <div class="perfil">
+            <button type="button"   id="close-modal" >X</button>
+            <h1>Hola,aqui esta su organizador de tareas</h1>
+            <span>Vamos a cumplir tus metas</span>
+            
+            <div class="agregar-tarea">
+                
+                <form class="form-create">
+    
+                    
+                    
+
+                    <div class="tarea">
+                        <input id="tittle" type="text" placeholder="Ingrese la tarea" ><!-- elemento para agregar al array-->
+                    </div>
+                    <span id="tittleErrors"></span>
+                    
+                    <select id="state" >
+                        <option value=" " disabled selected>Seleccione un estado</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En progreso">En progreso</option>
+                        <option value="Terminado">Terminado</option>
+                    </select>
+                    <span id="stateErrors" ></span>
+                    <button type="submit" class="submit">Crear</button>
+                    <span id="form-errors"></span>
+        
+                </form>     
+            </div>
+        </div>
+
+        <div class="li-tarea">
+            <ul></ul>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #84d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+    --main-color: hotpink;
+}
+
+
+
+
+body{
+    background-color: rgba(241, 220, 241, 0.533);
+    font-family: 'Prompt', sans-serif;
+   
+
+
+    
+}
+
+
+h1{
+    color: var(--white);
+
+}
+
+span{
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+
+
+.contain-modal {
+    background: linear-gradient(to bottom , var(--main-color) , var(--purple));
+    height: 100%;
+    width:400px;
+    max-width: 80%;
+    
+    display:none;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px;
+    
+    
+}
+
+.form-create {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+
+.show-modal {
+    display: flex;
+}
+
+.tarea{
+    background-color: var(--white);
+    border-radius: 15px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.tarea input{
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   border: none;
+   background-color: var(--white);
+}
+
+
+.tarea input::placeholder{
+    font-size: 1.1rem;
+    color: var(--main-color);
+ }
+
+ .li-tarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+ }
+
+ .li-tarea li {
+    display: flex;
+    background: linear-gradient(to bottom , var(--main-color) , var(--blue-light));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+ }
+
+ .li-tarea i {
+    font-size: 1.2rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
